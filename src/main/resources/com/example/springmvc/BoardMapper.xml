@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<mapper namespace="com.example.springmvc.mapper.BoardMapper">
+    <select id="boardCount" resultType="int">
+        SELECT count(boardID) AS cnt FROM tdl_board;
+    </select>
+
+    <select id="getList" resultType="com.example.springmvc.domain.Board">
+        SELECT * FROM tdl_board;
+    </select>
+</mapper>
